@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Increment from "./components/Increment";
+import Decrement from "./components/Decrement";
+import TotalCount from "./components/TotalCount";
+import StageManeger from "./StageManeger";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+      <StageManeger>
+        <div className="App">
+            <div className="row">
+                <Increment />
+                <Decrement />
+            </div>
+            <div className="row">
+                <TotalCount />
+            </div>
+        </div>
+        </StageManeger>
+    );
 }
 
 export default App;

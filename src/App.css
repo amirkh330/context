@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin:5%
 }
 
 .App-logo {
@@ -36,3 +37,41 @@
     transform: rotate(360deg);
   }
 }
+
+.increment{
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 20px;
+cursor: pointer;
+}
+
+.decrement{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 20px;
+cursor: pointer;
+}
+
+
+.total{
+  border:1px solid gray;
+  width:150px;
+  margin-top:20px
+}
+
+
+.row{
+  display: flex;
+  justify-content: center;
+}
+
